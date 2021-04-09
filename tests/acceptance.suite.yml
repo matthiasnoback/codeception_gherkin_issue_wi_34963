@@ -1,0 +1,13 @@
+actor: AcceptanceTester
+modules:
+  enabled:
+    - Asserts
+    - \Helper\Acceptance
+gherkin:
+  contexts:
+    default:
+      - AcceptanceTester
+      - Test\DefaultContext
+    tag:
+      special:
+        - Test\SpecialContext
